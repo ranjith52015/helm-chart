@@ -9,4 +9,4 @@ spec:
    name: hpa-{{ include "OpenMetadata.fullname"  . }}
  minReplicas: {{ .Values.hpa.minReplicas }}
  maxReplicas: {{ .Values.hpa.maxReplicas }}
- targetCPUUtilizationPercentage: {{ .Values.hpa.targetCPUUtilizationPercentage}}
+ targetCPUUtilizationPercentage: {{ .Values.hpa.targetCPUUtilizationPercentage }}
