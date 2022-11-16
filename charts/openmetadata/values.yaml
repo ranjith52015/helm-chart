@@ -2,11 +2,11 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 replicaCount: 1
-hpa: 
+autoscaling:
   minReplicas: 1
   maxReplicas: 20
-  targetCPUUtilizationPercentage: 50
-
+  targetCPU: 50
+  targetMemory: 50
 # Overrides the openmetadata config file with the help of Environment Variables
 # Below are defaults as per openmetadata-dependencies Helm Chart Values
 global:
