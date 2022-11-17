@@ -7,7 +7,7 @@ spec:
  scaleTargetRef:
    apiVersion: apps/v1
    kind: Deployment
-   name: hpa-{{ include "OpenMetadata.fullname"  . }}
+   name: autoscaling-{{ include "OpenMetadata.fullname"  . }}
  minReplicas: {{ .Values.autoscaling.minReplicas }}
  maxReplicas: {{ .Values.autoscaling.maxReplicas }}
  targetCPU: {{ .Values.autoscaling.targetCPU }}
